@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
-import Toolbar from './components/Toolbar/Toolbar';
-import SideDrawer from './components/SideDrawer/SideDrawer';
-import Backdrop from './components/Backdrop/Backdrop';
+
+import Toolbar from './components/Header/Toolbar/Toolbar';
+import SideDrawer from './components/Header/SideDrawer/SideDrawer';
+import Backdrop from './components/Header/Backdrop/Backdrop';
+import SearchBar from './components/Main/SearchBar/SearchBar';
+import SearchBar2 from './components/Main/PosterBar/PosterBar';
 
 
 class App extends Component {
@@ -30,14 +33,23 @@ class App extends Component {
     return (
       <div style={{height:'100%'}}>
 
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
+         
+            <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+            <SideDrawer show={this.state.sideDrawerOpen} />
+            {backdrop}
+          
 
-        <main style={{marginTop: '64px'}}>
-          <p>This is the page contant!</p>
-        </main>
-        
+          <div className="">
+            <br/>
+            <SearchBar />
+            <br/>
+            <SearchBar2/>
+          </div>
+
+          <div className="footer">
+            <p>eu sou Footer</p>
+          </div>
+      
       </div>
     );
   } 
