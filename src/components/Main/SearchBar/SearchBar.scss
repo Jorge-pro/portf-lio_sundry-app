@@ -1,60 +1,22 @@
-body {
-  background: url(https://images8.alphacoders.com/939/thumbbig-939716.png)
-    no-repeat center center fixed;
-  background-size: cover;
+ .containerOne{
+    padding-top: 8rem;
 }
 
-/* SEARCH BEGINS*/
-.search {
-  display: flex;
-  width: 50rem;
-  height: 3.1rem;
-  margin: 150px auto;
-  background: #444;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  border: 1px solid #fff;
-
-  input {
-    display: flex;
-    font-size: 1.3rem;
-    width: 42rem;
-    padding: 1rem 1rem;
-    float: left;
-    color: white;
-    border: 0;
-    background: transparent;
-    border-radius: 5px 0 0 3px;
-    &:focus {
-      outline: 0;
-      background: transparent;
-    }
-  }
-
-  button {
-    display: flex;
-    position: relative;
-    float: right;
-    border: 0;
-    padding: 0.5rem;
-    font-size: 1.7rem;
-    cursor: pointer;
-    height: 3.1rem;
-    width: 8rem;
+.btn-orangemoon {
+    backgrou-nd: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    background: transparent;
-    border-left: 1px solid #fff;
-    border-radius: 0 3px 3px 0;
-    &:hover {
-      background: #fff;
-      color: #444;
-    }
-    &:active {
-      box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
-    }
-    &:focus {
-      outline: 0;
-    }
-  }
+    border: 3px solid #eee;
+    border-radius: 10px;
 }
-/* SEARCH ENDS*/
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
