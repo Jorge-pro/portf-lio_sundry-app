@@ -1,0 +1,18 @@
+.cardTwo {
+  background-color: #fff;
+  border: 2px solid #521751;
+  border-radius: 8px;
+}
+@media (min-width: 769px) {
+  .containerTwo {
+    padding-top: 7rem;
+    margin: 0 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerTwo {
+    padding-top: 4rem;
+    margin: 0 0.2rem;
+  }
+}

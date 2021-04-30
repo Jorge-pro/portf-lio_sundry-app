@@ -1,38 +1,31 @@
 import React from 'react';
 
 import './Footer.scss';
+export default class Footer extends React.Component {
 
-const footer = props => {
+    render(){
     return(
-        <div className="container-fluid mt-5">
+        <div className="containerThree">
             <div className="card-footer mx-11">
                 <div className="row mb-8 ">
                     <div className="col-md-4 col-sm-11 col-xs-11">
-                        <div className="footer-text pull-left">
-
-                            <div className="d-flex">
-                                <div className="col item social">
-                                    <a href="/"><i className="icon ion-social-facebook"></i></a>
-                                    <a href="/"><i className="icon ion-social-twitter"></i></a>
-                                    <a href="/"><i className="icon ion-social-instagram"></i></a>
-                                </div>
-                            </div>
-
-                            <div className="col-md-12 item text">
-                                <h3> Sundry App </h3>
+                        <div className="col-md-12 align-items-center">
+                            <div className="text-footer">
+                                <h3> SundryApp </h3>
                                     <p> Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
                                         rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
-                                        vel in justo. </p>
+                                        vel in justo. 
+                                    </p>
+                                <div className="social mt-2 mb-3"> 
+                                    <i className="fa fa-facebook-official fa-lg"></i> 
+                                    <i className="fa fa-instagram fa-lg"></i> 
+                                    <i className="fa fa-twitter fa-lg"></i>
+                                    <i className="fa fa-facebook"></i> 
+                                </div>
                             </div>
-
-                            <div className="social mt-2 mb-3"> 
-                                <i className="fa fa-facebook-official fa-lg"></i> 
-                                <i className="fa fa-instagram fa-lg"></i> 
-                                <i className="fa fa-twitter fa-lg"></i>
-                                <i className="fa fa-facebook"></i> 
-                            </div>
-
                         </div>
+
+                        
                     </div>
 
                     <div className="col-md-2 col-sm-1 col-xs-1 mb-2"/>
@@ -81,5 +74,5 @@ const footer = props => {
         </div>
     );
  };
+}
 
-export default footer;

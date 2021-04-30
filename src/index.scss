@@ -1,9 +1,11 @@
 html {
+  padding: 0.5rem;
   height: 0;
 }
 
 body {
-  background: url(https://mahwengkwai.com/wp-content/uploads/2019/09/white-brick-8000-2-1140x684.jpg);
+  /*background: url(https://mahwengkwai.com/wp-content/uploads/2019/09/white-brick-8000-2-1140x684.jpg);*/
+  background-color: white;
   background-size: cover;
   flex-wrap: wrap;
   overflow: auto;
@@ -12,5 +14,3 @@ body {
   font-family: Proxima Nova, Verdana, Avenir Next;
   -webkit-font-smoothing: antialiased;
 }
-
-
