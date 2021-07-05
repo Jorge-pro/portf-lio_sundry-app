@@ -3,9 +3,8 @@ import React from 'react';
 import DrawerToggleButton from'../SideDrawer/DrawerToggleButton';
 import './Toolbar.scss';
 
-const toolbar = props => (
+const toolbar = props =>( 
   <header className="toolbar">
-
     <nav className="toolbar_navegation">
         <div className="toobar_toggle_button">
           <DrawerToggleButton click={props.drawerClickHandler} />
